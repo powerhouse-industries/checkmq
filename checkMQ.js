@@ -16,7 +16,7 @@ window.checkMQ = (function() {
 
     theBreakpoints.forEach(function (eachBreakpoint) {
       if (eachBreakpoint.theQuery.matches) {
-        if (theMQ != =eachBreakpoint.theName) {
+        if (theMQ !== eachBreakpoint.theName) {
           theMQ = eachBreakpoint.theName;
         }
       }
