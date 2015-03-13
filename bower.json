@@ -16,5 +16,7 @@
   ],
   "dependencies": {
     "media-match": "0.1.0"
-  }
+  },
+  "license": "MIT",
+  "ignore": ""
 }
