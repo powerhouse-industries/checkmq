@@ -18,5 +18,11 @@
     "media-match": "0.1.0"
   },
   "license": "MIT",
-  "ignore": ""
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
