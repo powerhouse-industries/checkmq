@@ -1,5 +1,7 @@
 # checkMQ
 
+[![Join the chat at https://gitter.im/jonnyhaynes/checkMQ](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jonnyhaynes/checkMQ?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This project uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) event listeners to provide you with access to media queries in Javascript as you would in CSS.
 
 ## Usage
