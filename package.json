@@ -1,8 +1,8 @@
 {
   "name": "checkmq",
-  "version": "1.0.2",
-  "devDependencies": {
-    "jshint": "2.6.3",
+  "version": "1.0.3",
+  "dependencies": {
+    "jshint": "2.6.3"
   },
   "scripts": {
     "test": "jshint checkMQ.js"
