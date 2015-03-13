@@ -4,7 +4,33 @@ This project uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/
 
 ## Usage
 
+First you need to add your function to the checkMQ `theFunctions` array like so:
 
+```javascript
+checkMQ.addFunction(myFunction)
+```
+
+Then you can check against your specified media queries in your function like so:
+
+```javascript
+var myFunction = function(theMQ) {
+  
+  var whichMQ;
+
+  if (theMQ === 'mqCore') {
+    // functions for core media query
+    whichMQ = 'mqCore';
+  } else if (theMQ === 'mq600) {
+    // functions for the 600 media query
+    whichMQ = 'mq600';
+  } else if (theMQ == 'mq960') || (theMQ == 'mq1200')) {
+    // functions for the 960 and 1200 media queries
+    whichMQ = 'mq960 & mq1200';
+  }
+  
+  return whichMQ;
+}
+```
 
 ## Bower
 
