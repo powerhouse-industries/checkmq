@@ -20,7 +20,7 @@ var myFunction = function(theMQ) {
   if (theMQ === 'mqCore') {
     // functions for core media query
     whichMQ = 'mqCore';
-  } else if (theMQ === 'mq600) {
+  } else if (theMQ === 'mq600') {
     // functions for the 600 media query
     whichMQ = 'mq600';
   } else if (theMQ == 'mq960') || (theMQ == 'mq1200')) {
