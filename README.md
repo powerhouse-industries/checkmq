@@ -36,7 +36,7 @@ var myFunction = function(theMQ) {
 
 ## Bower
 
-If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkMQ": "1.0.0" in your bower.json file and run bower install.
+If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.0.0" in your bower.json file and run bower install.
 
 ## Browser support
 
