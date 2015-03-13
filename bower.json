@@ -1,5 +1,5 @@
 {
-  "name": "checkmq",
+  "name": "checkMQ",
   "version": "1.0.0",
   "homepage": "https://github.com/jonnyhaynes/checkMQ",
   "authors": [
@@ -13,5 +13,8 @@
     "jquery",
     "front-end",
     "web"
-  ]
+  ],
+  "dependencies": {
+    "matchMedia": "0.2.0"
+  }
 }
