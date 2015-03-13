@@ -13,8 +13,5 @@
     "jquery",
     "front-end",
     "web"
-  ],
-  "dependencies": {
-    "matchMedia": "0.2.0"
-  }
+  ]
 }
