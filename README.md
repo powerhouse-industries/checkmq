@@ -50,5 +50,5 @@ For support in IE 9 you can use [Weblinc's Media.match Polyfill](https://github.
 
 ## Changelog
 
-13/03/15: 1.0.2 – Code tidy up to fix Travis issues
-13/03/15: 1.0.0 – First major release: registered as a Bower plugin.
+* 13/03/15: 1.0.2 – Code tidy up to fix Travis issues
+* 13/03/15: 1.0.0 – First major release: registered as a Bower plugin.
