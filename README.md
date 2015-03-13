@@ -1,6 +1,6 @@
 # checkMQ
 
-[![Build Status](https://travis-ci.org/jonnyhaynes/checkMQ.svg)](https://travis-ci.org/jonnyhaynes/checkMQ) [![Code Climate](https://codeclimate.com/github/jonnyhaynes/checkMQ/badges/gpa.svg)](https://codeclimate.com/github/jonnyhaynes/checkMQ) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jonnyhaynes/checkMQ?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/jonnyhaynes/checkMQ.svg)](https://travis-ci.org/jonnyhaynes/checkmq) [![Code Climate](https://codeclimate.com/github/jonnyhaynes/checkMQ/badges/gpa.svg)](https://codeclimate.com/github/jonnyhaynes/checkmq) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jonnyhaynes/checkmq?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This project uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) event listeners to provide you with access to media queries in Javascript as you would in CSS.
 
@@ -36,7 +36,7 @@ var myFunction = function(theMQ) {
 
 ## Bower
 
-If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.0.0" in your bower.json file and run bower install.
+If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkMQ": "1.0.0" in your bower.json file and run bower install.
 
 ## Browser support
 

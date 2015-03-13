@@ -1,7 +1,7 @@
 {
-  "name": "checkmq",
+  "name": "checkMQ",
   "version": "1.0.0",
-  "homepage": "https://github.com/jonnyhaynes/checkMQ",
+  "homepage": "https://github.com/jonnyhaynes/checkmq",
   "authors": [
     "Jonny Haynes <jonny@colouringcode.com>"
   ],
