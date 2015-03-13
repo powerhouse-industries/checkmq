@@ -1,0 +1,17 @@
+{
+  "name": "checkmq",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jonnyhaynes/checkMQ",
+  "authors": [
+    "Jonny Haynes <jonny@colouringcode.com>"
+  ],
+  "description": "Mediaqueries for Javascript",
+  "main": "checkMQ.js",
+  "keywords": [
+    "media-queries",
+    "match-media",
+    "jquery",
+    "front-end",
+    "web"
+  ]
+}
