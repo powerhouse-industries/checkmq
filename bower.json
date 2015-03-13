@@ -1,6 +1,6 @@
 {
   "name": "checkmq",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/jonnyhaynes/checkmq",
   "authors": [
     "Jonny Haynes <jonny@colouringcode.com>"
@@ -15,7 +15,7 @@
     "web"
   ],
   "dependencies": {
-    "media-match": "0.1.0"
+    "media-match": "2.0.2"
   },
   "license": "MIT",
   "ignore": [
