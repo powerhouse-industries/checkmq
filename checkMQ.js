@@ -75,7 +75,7 @@ window.checkMQ = (function() {
 if (document.readyState != 'loading'){
   checkMQ.init();
 } else if (document.addEventListener) {
-  document.addEventListener('DOMContentLoaded', checkMQ.init;
+  document.addEventListener('DOMContentLoaded', checkMQ.init);
 } else {
   document.attachEvent('onreadystatechange', function() {
     if (document.readyState != 'loading')
