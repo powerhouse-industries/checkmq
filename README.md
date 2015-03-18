@@ -9,8 +9,10 @@ This project uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/
 First you need to add your function to the checkMQ `theFunctions` array like so:
 
 ```javascript
-checkMQ.addFunction(myFunction)
+checkMQ.addFunction(myFunction);
 ```
+
+**N.B.** This is best done in some form of document ready
 
 Then you can check against your specified media queries in your function like so:
 
@@ -25,7 +27,7 @@ var myFunction = function(theMQ) {
   } else if (theMQ === 'mq600') {
     // functions for the 600 media query
     whichMQ = 'mq600';
-  } else if (theMQ == 'mq960') || (theMQ == 'mq1200')) {
+  } else if ((theMQ == 'mq960') || (theMQ == 'mq1200')) {
     // functions for the 960 and 1200 media queries
     whichMQ = 'mq960 & mq1200';
   }
@@ -36,12 +38,12 @@ var myFunction = function(theMQ) {
 
 ## Bower
 
-If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.0.5" in your bower.json file and run bower install.
+If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.0.6" in your bower.json file and run bower install.
 
 ## Browser support
 
 * Internet Explorer 10+
-* Firefox 6+
+* Firefox 10+
 * Chrome 9+
 * Safari 5.1+
 * Opera 12.1+
@@ -50,7 +52,9 @@ For support in IE 9 you can use [Weblinc's Media.match Polyfill](https://github.
 
 ## Changelog
 
-* 13/03/15: 1.0.3 – fixing broken mpdule code
+* 18/03/15: 1.0.6 – Removing forEach method and using a 'for' loop as it's replacement for wider browser support
+* 16/03/15: 1.0.5 – Updating README
+* 13/03/15: 1.0.4 – Fixing broken module code
 * 13/03/15: 1.0.3 – Fixing package.json
 * 13/03/15: 1.0.2 – Code tidy up to fix Travis issues
 * 13/03/15: 1.0.0 – First major release: registered as a Bower plugin.
