@@ -38,7 +38,7 @@ var myFunction = function(theMQ) {
 
 ## Bower
 
-If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.0.6" in your bower.json file and run bower install.
+If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.1.0" in your bower.json file and run bower install.
 
 ## Browser support
 
@@ -52,6 +52,7 @@ For support in IE 9 you can use [Weblinc's Media.match Polyfill](https://github.
 
 ## Changelog
 
+* 18/03/15: 1.1.0 - Fixing missing brack on doc ready function and bumping version number to account for rewritten code
 * 18/03/15: 1.0.6 – Removing forEach method and using a 'for' loop as it's replacement for wider browser support
 * 16/03/15: 1.0.5 – Updating README
 * 13/03/15: 1.0.4 – Fixing broken module code
