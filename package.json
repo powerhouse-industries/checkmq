@@ -1,10 +1,30 @@
 {
   "name": "checkmq",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "dependencies": {
     "jshint": "2.6.3"
   },
   "scripts": {
     "test": "jshint checkMQ.js"
-  }
+  },
+  "description": "Mediaqueries for Javascript",
+  "main": "checkMQ.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyhaynes/checkmq.git"
+  },
+  "keywords": [
+    "media",
+    "queries",
+    "javascript"
+  ],
+  "author": "Jonny Haynes <jonny@colouringcode.com> (http://www.colouringcode.com)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonnyhaynes/checkmq/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/jonnyhaynes/checkmq/issues"
+  },
+  "homepage": "https://github.com/jonnyhaynes/checkmq#readme"
 }
