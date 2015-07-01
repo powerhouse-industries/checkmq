@@ -23,6 +23,8 @@ window.checkMQ = (function() {
       }
     }
 
+    loadFunctions(theMQ);
+
     return theMQ;
 
   };
