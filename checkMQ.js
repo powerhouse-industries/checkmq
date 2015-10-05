@@ -52,7 +52,7 @@ window.checkMQ = (function() {
 
     theFunctions.push(fn);
 
-    loadFunctions(whichMQ());
+    loadFunctions(whichMQ);
 
   };
 
