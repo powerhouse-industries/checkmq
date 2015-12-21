@@ -1,30 +1,37 @@
 {
   "name": "checkmq",
-  "version": "1.3.1",
-  "dependencies": {
-    "jshint": "2.6.3"
+  "version": "2.0.0",
+  "description": "Media Queries in JavaScript",
+  "main": "js/dist/checkMQ.min.js",
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-es2015-modules-amd": "^6.3.13",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "jshint": "^2.8.0",
+    "onchange": "^2.0.0",
+    "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "test": "jshint checkMQ.js"
+    "watch": "onchange 'src/*' 'test/*' -- npm run build",
+    "build": "babel src/checkMQ.js --out-file dist/checkMQ.js && uglifyjs dist/checkMQ.js -o dist/checkMQ.min.js",
+    "test": "jshint src/checkMQ.js"
   },
-  "description": "Mediaqueries for Javascript",
-  "main": "checkMQ.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonnyhaynes/checkmq.git"
+    "url": "git://github.com/powerhouse-industries/checkmq.git"
   },
   "keywords": [
-    "media",
-    "queries",
+    "mediaqueries",
+    "responsive",
     "javascript"
   ],
-  "author": "Jonny Haynes <jonny@colouringcode.com> (http://www.colouringcode.com)",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonnyhaynes/checkmq/blob/master/LICENSE"
-  },
+  "author": [
+    "Oliver Farrell <oliver@oliverjfarrell.co.uk>"
+  ],
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonnyhaynes/checkmq/issues"
-  },
-  "homepage": "https://github.com/jonnyhaynes/checkmq#readme"
+    "url": "https://github.com/powerhouse-industries/checkmq/issues"
+  }
 }

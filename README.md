@@ -1,47 +1,65 @@
 # checkMQ
 
-[![Build Status](https://travis-ci.org/jonnyhaynes/checkmq.svg?branch=master)](https://travis-ci.org/jonnyhaynes/checkmq) [![Code Climate](https://codeclimate.com/github/jonnyhaynes/checkmq/badges/gpa.svg)](https://codeclimate.com/github/jonnyhaynes/checkmq) [![npm](https://img.shields.io/npm/v/checkmq.svg)](https://www.npmjs.com/package/checkmq) [![Bower](https://img.shields.io/bower/v/checkmq.svg)](https://github.com/jonnyhaynes/checkmq) [![Dependency Status](https://david-dm.org/jonnyhaynes/checkmq.svg)](https://david-dm.org/jonnyhaynes/checkmq) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jonnyhaynes/checkmq?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/powerhouse-industries/checkmq.svg?branch=master)](https://travis-ci.org/powerhouse-industries/checkmq) [![Code Climate](https://codeclimate.com/github/powerhouse-industries/checkmq/badges/gpa.svg)](https://codeclimate.com/github/powerhouse-industries/checkmq) [![npm](https://img.shields.io/npm/v/checkmq.svg)](https://www.npmjs.com/package/checkmq) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/powerhouse-industries/checkmq?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This project uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) event listeners to provide you with access to media queries in Javascript as you would in CSS.
+`checkMQ` utilises [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) event listeners to provide you with access to media queries in JavaScript as you would in CSS.
 
 ## Usage
 
-First you need to add your function to the checkMQ `theFunctions` array like so:
+Include checkMQ in your project. You can either use the script in the traditional method like so:
 
-```javascript
-checkMQ.addFunction(myFunction);
+```
+<script src="checkMQ.min.js"></script>
 ```
 
-**N.B.** This is best done in some form of document ready and needs to be called after the function.
+or use requireJS, webpack etc like so:
 
-Then you can check against your specified media queries in your function like so:
+```
+var checkMQ = require('checkmq.min.js');
+```
+
+If using NPM to manage dependencies you can do the following:
+
+```
+npm install checkmq
+```
+
+Each function that needs access the defined media queries should have `theMQ` passed through as a parameter. The value of `theMQ` will change when it matches one of the predefined media queries.
 
 ```javascript
-var myFunction = function(theMQ) {
-
-  var whichMQ;
+var testFunction = function (theMQ) {
 
   if (theMQ === 'mqCore') {
-    // functions for core media query
-    whichMQ = 'mqCore';
+    console.log('mqCore');
   } else if (theMQ === 'mq600') {
-    // functions for the 600 media query
-    whichMQ = 'mq600';
-  } else if ((theMQ === 'mq960') || (theMQ === 'mq1200')) {
-    // functions for the 960 and 1200 media queries
-    whichMQ = 'mq960 & mq1200';
+    console.log('mq600');
+  } else if (theMQ === 'mq768') {
+    console.log('mq768');
+  } else if (theMQ === 'mq960') {
+    console.log('mq960');
+  } else if(theMQ === 'mq1200') {
+    console.log('mq1200');
   }
 
-  console.log(whichMQ);
-}
+};
+
+var anotherTestFunction = function (theMQ) {
+
+  if (theMQ === 'mqCore') {
+    alert('this is a small screen device');
+  }
+
+};
 ```
 
-## Bower
+Each function that requires access to `theMQ` must be passed the `addFunctions` method which adds the appropraite matchMedia listeners. It's important that this is the last method called.
 
-If you're using Bower to manage your front-end dependencies you can include this plugin as a component. Include "checkmq": "1.3.1" in your bower.json file and run `bower install`.
-
-## NPM
-If you're using NPM to manage your dependencies you can include this plugin as a module. Just run `npm install checkmq`.
+```javascript
+checkMQ.addFunctions([
+  testFunction,
+  anotherTestFunction
+]);
+```
 
 ## Browser support
 
@@ -51,10 +69,14 @@ If you're using NPM to manage your dependencies you can include this plugin as a
 * Safari 5.1+
 * Opera 12.1+
 
-For support in IE 9 you can use [Weblinc's Media.match Polyfill](https://github.com/weblinc/media-match).
+For IE 9 support you can use [Weblinc's Media.match Polyfill](https://github.com/weblinc/media-match).
+
+## TODO
+- Improve the method of definining media queries so they can become dynamic
 
 ## Changelog
 
+* 21/12/15: 2.0.0 - Major rewrite using ES6.
 * 01/07/15: 1.3.1 - Tidied up the code and fixed the timing issue in <= IE10
 * 18/06/15: 1.2.0 - Converting to an Node.js module and updating README to include instructions for this
 * 26/03/15: 1.1.1 - Updated README to be more clear on how it works
