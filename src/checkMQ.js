@@ -71,4 +71,4 @@ export function addFunctions (fns) {
 
   changeMQ();
 
-};
+}
