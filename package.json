@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jonnyhaynes/checkmq.git"
+    "url": "git://github.com/powerhouse-industries/checkmq.git"
   },
   "keywords": [
     "mediaqueries",
@@ -30,6 +30,6 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonnyhaynes/checkmq/issues"
+    "url": "https://github.com/powerhouse-industries/checkmq/issues"
   },
 }

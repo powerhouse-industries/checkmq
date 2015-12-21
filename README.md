@@ -1,6 +1,6 @@
 # checkMQ
 
-[![Build Status](https://travis-ci.org/jonnyhaynes/checkmq.svg?branch=master)](https://travis-ci.org/jonnyhaynes/checkmq) [![Code Climate](https://codeclimate.com/github/jonnyhaynes/checkmq/badges/gpa.svg)](https://codeclimate.com/github/jonnyhaynes/checkmq) [![npm](https://img.shields.io/npm/v/checkmq.svg)](https://www.npmjs.com/package/checkmq) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jonnyhaynes/checkmq?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/powerhouse-industries/checkmq.svg?branch=master)](https://travis-ci.org/powerhouse-industries/checkmq) [![Code Climate](https://codeclimate.com/github/powerhouse-industries/checkmq/badges/gpa.svg)](https://codeclimate.com/github/powerhouse-industries/checkmq) [![npm](https://img.shields.io/npm/v/checkmq.svg)](https://www.npmjs.com/package/checkmq) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/powerhouse-industries/checkmq?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 `checkMQ` utilises [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) event listeners to provide you with access to media queries in JavaScript as you would in CSS.
 
