@@ -8,19 +8,19 @@
 
 Include checkMQ in your project. You can either use the script in the traditional method like so:
 
-```
+```html
 <script src="checkMQ.min.js"></script>
 ```
 
 or use requireJS, webpack etc like so:
 
-```
+```javascript
 var checkMQ = require('checkmq.min.js');
 ```
 
 If using NPM to manage dependencies you can do the following:
 
-```
+```bash
 npm install checkmq
 ```
 
